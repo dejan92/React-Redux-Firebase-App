@@ -17,7 +17,8 @@ class CreateProject extends Component {
     this.props.createProject(this.state)
   };
   render() {
-    return <div className="container">
+    return (
+    <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
           <h5 className="grey-text text-darken-3">Create New Project</h5>
           <div className="input-field">
@@ -34,7 +35,8 @@ class CreateProject extends Component {
             </button>
           </div>
         </form>
-      </div>;
+      </div>
+    );
   }
 }
 
